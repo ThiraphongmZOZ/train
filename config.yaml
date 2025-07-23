@@ -1,0 +1,18 @@
+audio:
+  sample_rate: 16000
+
+dataset:
+  train_path: ./metadata_train.csv
+  eval_path: ./metadata_eval.csv
+
+tokenizer:
+  use_pretrained: true  # ใช้ tokenizer XTTS เดิม
+
+trainer:
+  batch_size: 4        # ปรับตามแรม/VRAM เครื่อง
+  max_steps: 20000      # หรือน้อยกว่านี้ถ้า dataset ไม่เยอะ
+  save_every_n_steps: 1000
+  eval_every_n_steps: 500
+
+model:
+  use_speaker_embedding: true
