@@ -1,7 +1,7 @@
 import os
 from pydub import AudioSegment
 
-ffmpeg_path = os.path.abspath(r"C:\project\traina_ne_csv_thai\ffmpeg-7.1.1-essentials_build\bin")
+ffmpeg_path = os.path.abspath(r"C:/project/train/ffmpeg/bin")
 os.environ["PATH"] = ffmpeg_path + os.pathsep + os.environ["PATH"]
 
 
