@@ -56,7 +56,7 @@ python train_gpt_xtts.py `
 >>    --weight_decay 1e-2 ` 
 >>    --lr 1e-5 ` 
 >>    --save_step 2000
-
+pp
 
 python train_gpt_xtts.py --output_path checkpoints/ --metadatas ../metadata.csv,../metadata_eval.csv,th --num_epochs 5 --batch_size 2 --grad_acumm 4 --max_text_length 250 --max_audio_length 255995 --weight_decay 1e-2 --lr 1e-5 --save_step 2000
 
